@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ポートフォリオ</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css" />
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/ff5c8f4b0c.js" crossorigin="anonymous"></script>
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=2,user-scalable=no">
+</head>
+  <body>
+    <div class="wrapper">
+      <!-- ヘッダー -->
+      <div class="header">
+        <div class="header_block">
+          <!-- メニュー -->
+          <div id="header_menu" class="header_menu">
+            <span class="span1"></span>
+            <span class="span2"></span>
+            <span class="span3"></span>
+          </div>
+          <!-- オンラインショップ -->
+          <div class="header_onlineshop">
+            <a href="#">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+          </div>
+          <!-- タイトル -->
+          <div class="header_title">
+            <a href="#">
+              <p class="font_serif">和菓子</p>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="contents">
+        <div class="contents_block">
+          <!-- メイン -->
+          <div class="head_message font_serif">
+            <h1><p>本日、</p><p>和菓子</p><p>日和。</p></h1>
+          </div>
+          <!-- スライド -->
+          <swiper-container class="swiper-container" init="false">
+            <swiper-slide>
+              <img src="" />
+            </swiper-slide>
+            <swiper-slide>Slide 2</swiper-slide>
+            <swiper-slide>Slide 3</swiper-slide>
+            <swiper-slide>Slide 4</swiper-slide>
+            <swiper-slide>Slide 5</swiper-slide>
+            <swiper-slide>Slide 6</swiper-slide>
+            <swiper-slide>Slide 7</swiper-slide>
+            <swiper-slide>Slide 8</swiper-slide>
+            <swiper-slide>Slide 9</swiper-slide>
+          </swiper-container>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
+    <script>
+      document.getElementById('header_menu').onclick = function() {
+        this.classList.toggle('active');
+      };
+
+      const swiperEl = document.querySelector('swiper-container')
+      Object.assign(swiperEl, {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        loop: true,
+        speed: 1000, // 1秒かけてスライドを切り替える
+        allowTouchMove: false, 
+        autoplay: {
+          delay: 2000, // 2秒後に次のスライドへ
+        },
+        breakpoints: {
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 4,
+            spaceBetween: 40,
+          },
+          1024: {
+            slidesPerView: 5,
+            spaceBetween: 50,
+          },
+        },
+      });
+      swiperEl.initialize();
+
+    </script>
+  </body>
+</html>
