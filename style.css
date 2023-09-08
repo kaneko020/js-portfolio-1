@@ -118,20 +118,39 @@
   margin: 0px 35px;
 }
 
-swiper-container {
-  margin-top: 170px;
+.swiper {
+  margin-top: 70px;
+  height: 100%;
 }
 
-swiper-slide {
+.swiper-slide {
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 100px 0;
+  transition: all .7s ease-in;
+  /* transform-origin: center bottom; */
+  /* animation: yurayura 1s linear infinite; */
 }
 
-swiper-slide img {
+.swiper-slide img {
   display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.swiper-slide-active {
+  transform: scale(1.8);
+  transition: all .7s ease-in;
+}
+
+@keyframes yurayura {
+  0% , 100%{
+      transform: rotate(5deg);
+  }
+  50%{
+      transform: rotate(-5deg);
+  }
 }

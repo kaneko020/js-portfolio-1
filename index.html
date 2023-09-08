@@ -7,8 +7,9 @@
   <title>ポートフォリオ</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css" />
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
   <script src="https://kit.fontawesome.com/ff5c8f4b0c.js" crossorigin="anonymous"></script>
-  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=2,user-scalable=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
 </head>
   <body>
     <div class="wrapper">
@@ -43,55 +44,71 @@
             <h1><p>本日、</p><p>和菓子</p><p>日和。</p></h1>
           </div>
           <!-- スライド -->
-          <swiper-container class="swiper-container" init="false">
-            <swiper-slide>
-              <img src="" />
-            </swiper-slide>
-            <swiper-slide>Slide 2</swiper-slide>
-            <swiper-slide>Slide 3</swiper-slide>
-            <swiper-slide>Slide 4</swiper-slide>
-            <swiper-slide>Slide 5</swiper-slide>
-            <swiper-slide>Slide 6</swiper-slide>
-            <swiper-slide>Slide 7</swiper-slide>
-            <swiper-slide>Slide 8</swiper-slide>
-            <swiper-slide>Slide 9</swiper-slide>
-          </swiper-container>
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./images/castella.png" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/ichigo-daifuku_ec.png" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/dorayaki_marugoto.png" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/kushi-dango_an.png" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/kashiwamochi.png" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/youkan.png" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/taiyaki.png" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/monaka.png" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/mitarashi-dango.png" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/yomogimochi.png" />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script>
       document.getElementById('header_menu').onclick = function() {
         this.classList.toggle('active');
       };
 
-      const swiperEl = document.querySelector('swiper-container')
-      Object.assign(swiperEl, {
+      var swiper = new Swiper(".swiper", {
         slidesPerView: 1,
-        spaceBetween: 10,
         loop: true,
         speed: 1000, // 1秒かけてスライドを切り替える
+        centeredSlides: true,
+        centeredSlidesBounds: true,
         allowTouchMove: false, 
         autoplay: {
           delay: 2000, // 2秒後に次のスライドへ
         },
         breakpoints: {
-          640: {
-            slidesPerView: 2,
-            spaceBetween: 20,
-          },
           768: {
-            slidesPerView: 4,
-            spaceBetween: 40,
+            slidesPerView: 2.5,
+            spaceBetween: 120,
           },
           1024: {
-            slidesPerView: 5,
-            spaceBetween: 50,
+            slidesPerView: 4.5,
+            spaceBetween: 100,
           },
         },
       });
-      swiperEl.initialize();
 
     </script>
   </body>
