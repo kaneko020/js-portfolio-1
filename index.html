@@ -15,6 +15,16 @@
 </head>
   <body>
     <div class="wrapper">
+      <!-- Load -->
+      <div class="load">
+        <div class="load_inner">
+          <div class="load_block">
+            <div class="load_logo">
+              <img src="https://kuwazawa-wagashi.com/img/logo_img1b.svg">
+            </div>
+          </div>
+        </div>
+      </div>
       <!-- ヘッダー -->
       <div class="header">
         <div class="header_block">
@@ -44,7 +54,17 @@
           <div class="contents_block">
             <!-- メイン -->
             <div class="head_message font_serif">
-              <h1><p>本日、</p><p>和菓子</p><p>日和。</p></h1>
+              <h1>
+                <span class="firstview_letter firstview_letter1">本</span>
+                <span class="firstview_letter firstview_letter2">日</span>
+                <span class="firstview_letter firstview_letter3">、</span><br>
+                <span class="firstview_letter firstview_letter4">和</span>
+                <span class="firstview_letter firstview_letter5">菓</span>
+                <span class="firstview_letter firstview_letter6">子</span><br>
+                <span class="firstview_letter firstview_letter7">日</span>
+                <span class="firstview_letter firstview_letter8">和</span>
+                <span class="firstview_letter firstview_letter9">。</span>
+              </h1>
             </div>
 
             <div class="scroll_text">
@@ -436,26 +456,70 @@
       </div>
       <!-- フッター -->
       <div class="footer">
-        <div class="footer_block">
-          <div class="footer_onlineshop">	
-						<a href="#" class="font_serif">
-              <div class="footer_img">
-                <img src="./images/dorayaki_marugoto.png" class="scroll_img_off" >
-                <img src="./images/dorayaki_hanbun.png" class="scroll_img_off" >
-              </div>
-              <p>オンラインショップ</p>
-              <div>
-                <span class="scroll_line_horizontal"><span class="hover_line_horizontal"></span></span>
-              </div>
-              <p class="font_en">ONLINE SHOP</p>
-            </a>
-					</div>
+        <div class="footer_inner">
+          <div class="footer_block">
+            <div class="footer_onlineshop">	
+              <a href="#" class="font_serif">
+                <div class="footer_img">
+                  <img src="./images/dorayaki_marugoto.png" class="scroll_img_off" >
+                  <img src="./images/dorayaki_hanbun.png" class="scroll_img_off" >
+                </div>
+                <p>オンラインショップ</p>
+                <div>
+                  <span class="scroll_line_horizontal"><span class="hover_line_horizontal"></span></span>
+                </div>
+                <p class="font_en">ONLINE SHOP</p>
+              </a>
+            </div>
+            <div class="footer_logo">
+              <a href="#" class="link">
+                <img src="https://kuwazawa-wagashi.com/img/logo_img1b.svg">
+              </a>
+            </div>
+            <div class="footer_text font_serif">									
+              <p class="">くわざわ</p>			
+              <p class="">
+                営業時間／AM8:00～PM18:30
+                <br class="tb_disp sp_disp">
+                <span class="pc_disp">　</span>定休日／水曜日（祝祭日以外）
+              </p>	
+              <p class="">
+                TEL.
+                <a href="tel:0247-26-2851">0247-26-2851</a>
+                FAX.0247-26-8511
+                <br class="tb_disp sp_disp">
+                <span class="pc_disp">　</span>
+                〒963-7808 福島県石川郡石川町双里字神主20-1
+              </p>	
+            </div>
+            <div class="footer_contact">
+              <a href="#" class="font_serif">
+                <p class="">お問い合わせ</p>
+              </a>
+            </div>
+            <div class="footer_sns">
+              <a href="https://www.instagram.com/kuwazawa_wagashi/" target="_blank">
+                <img src="https://kuwazawa-wagashi.com/img/icon_img2b.svg">
+              </a>
+            </div>
+            <div class="footer_copyright font_serif">
+              <p class="font_en">@2022 okashinokuwazawa</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script>
+      // ロード画面
+      $(window).on('load', function(){
+        $('html,body').animate({ scrollTop: 0 }, '1');
+        setTimeout(function(){
+          $('.load').parent('.wrapper').addClass('load_off');
+        },1000);
+      });
+
       // ハンバーガーメニュー
       document.getElementById('header_menu').onclick = function() {
         this.classList.toggle('active');
