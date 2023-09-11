@@ -8,6 +8,8 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css" />
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&amp;family=Shippori+Mincho:wght@500;600&amp;display=swap" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://kit.fontawesome.com/ff5c8f4b0c.js" crossorigin="anonymous"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
 </head>
@@ -38,82 +40,428 @@
       </div>
 
       <div class="contents">
-        <div class="contents_title">
-          <!-- メイン -->
-          <div class="head_message font_serif">
-            <h1><p>本日、</p><p>和菓子</p><p>日和。</p></h1>
-          </div>
-          <!-- スライド -->
-          <div class="swiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <img src="./images/castella.png" />
-              </div>
-              <div class="swiper-slide">
-                <img src="./images/ichigo-daifuku_ec.png" />
-              </div>
-              <div class="swiper-slide">
-                <img src="./images/dorayaki_marugoto.png" />
-              </div>
-              <div class="swiper-slide">
-                <img src="./images/kushi-dango_an.png" />
-              </div>
-              <div class="swiper-slide">
-                <img src="./images/kashiwamochi.png" />
-              </div>
-              <div class="swiper-slide">
-                <img src="./images/youkan.png" />
-              </div>
-              <div class="swiper-slide">
-                <img src="./images/taiyaki.png" />
-              </div>
-              <div class="swiper-slide">
-                <img src="./images/monaka.png" />
-              </div>
-              <div class="swiper-slide">
-                <img src="./images/mitarashi-dango.png" />
-              </div>
-              <div class="swiper-slide">
-                <img src="./images/yomogimochi.png" />
+        <section id="about" class="content_section" style="height: 100vh;">
+          <div class="contents_block">
+            <!-- メイン -->
+            <div class="head_message font_serif">
+              <h1><p>本日、</p><p>和菓子</p><p>日和。</p></h1>
+            </div>
+
+            <div class="scroll_text">
+              <p class="font_serif">
+                <span>ス</span>
+                <span>ク</span>
+                <span>ロ</span>
+                <span>ー</span>
+                <span>ル</span>
+              </p>
+            </div>
+
+            <!-- スライド -->
+            <div class="slide">
+              <div class="swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="./images/castella.png" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./images/ichigo-daifuku_ec.png" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./images/dorayaki_marugoto.png" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./images/kushi-dango_an.png" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./images/kashiwamochi.png" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./images/kujira-youkan_ec.png" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./images/taiyaki.png" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./images/monaka.png" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./images/mitarashi-dango.png" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./images/yomogimochi.png" />
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <div class="scroll_text">
-            <p class="font_serif">
-              <span>ス</span>
-              <span>ク</span>
-              <span>ロ</span>
-              <span>ー</span>
-              <span>ル</span>
-            </p>
+        </section>
+
+        <section class="content_section py">
+          <div class="contents_title_vertical">
+            <div>
+              <span class="scroll_line_vertical"></span>
+            </div>
           </div>
-        </div>
-        <div class="contents_title_vertical">
-          <div><span class="scroll_line_vertical"></span></div>
-        </div>
-        <div class="contents_block">
-          <div class="about_title font_serif">
-            <p>創業明治二十年<br />老舗の推しあんこ</p>
+          <div class="contents_block">
+            <div class="about_title font_serif about_scroll scroll_off1">
+              <p>創業明治二十年<br />老舗の推しあんこ</p>
+            </div>
+            <div class="about_text font_serif about_scroll scroll_off1">
+              <p>
+                福島県石川町にある創業明治20年の和菓子店です。<br />
+                創業当時から変わらぬ製法の茶まんじゅうや<br />
+                どら焼きに生クリームをサンドした人気のくわどら<br />
+                職人が彩りを加える季節の上生菓子など。<br />
+                手作りだから出会える味わいを、お楽しみください。
+              </p>
+            </div>
           </div>
-          <div class="about_text font_serif">
-            <p>
-              福島県石川町にある創業明治20年の和菓子店です。<br />
-              創業当時から変わらぬ製法の茶まんじゅうや<br />
-              どら焼きに生クリームをサンドした人気のくわどら<br />
-              職人が彩りを加える季節の上生菓子など。<br />
-              手作りだから出会える味わいを、お楽しみください。
-            </p>
+        </section>
+        <!-- じまんのお菓子 -->
+        <section id="recommend" class="content_section py">
+          <div class="contents_title_vertical contents_title">
+            <div>
+              <span class="scroll_line_vertical"></span>
+            </div>
+            <h2 class="font_serif about_scroll scroll_off1">じまんのお菓子</h2>
           </div>
+          <!-- おすすめリスト -->
+          <div class="contents_block">
+            <!-- おすすめ1 -->
+            <div class="recommend_list scroll_off2">
+              <div class="recommend_img">
+                <div>
+                  <img src="./images/dorayaki_marugoto.png" class="scroll_img_off" />
+                </div>
+              </div>
+              <div class="recommend_text">
+                <div class="font_serif">
+                  <p>どら焼き</p>
+                  <p>ふわっとした皮と自家製のつぶあん<br>
+                    中にプレミアムな生クリーム。<br>
+                    幸せサンドのくわざわ新名物。<br>
+                  </p>
+                  <a href="#">
+                    <p>詳しく</p>
+                    <div>
+                      <span class="scroll_line_horizontal"><span class="hover_line_horizontal"></span></span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- おすすめ2 -->
+            <div class="recommend_list scroll_off2">
+              <div class="recommend_img">
+                <div>
+                  <img src="./images/mitarashi-dango.png" class="scroll_img_off" />
+                  <img src="./images/kushi-dango_an.png" class="scroll_img_off" />
+                </div>
+              </div>
+              <div class="recommend_text">
+                <div class="font_serif">
+                  <p>おだんご</p>
+                  <p>適度な弾力でくちどけなめらか<br>
+                    甘辛いタレをからめたみたらし。<br>
+                    自家製のあんこをのせたあん団子。<br>
+                  </p>
+                  <a href="#">
+                    <p>詳しく</p>
+                    <div>
+                      <span class="scroll_line_horizontal"><span class="hover_line_horizontal"></span></span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- おすすめ3 -->
+            <div class="recommend_list scroll_off2">
+              <div class="recommend_img">
+                <div>
+                  <img src="./images/azuki.png" class="scroll_img_off" />
+                  <img src="./images/onsen-manjuu.png" class="scroll_img_off" />
+                </div>
+              </div>
+              <div class="recommend_text">
+                <div class="font_serif">
+                  <p>おまんじゅう</p>
+                  <p>自家製のあんこを味わって欲しい<br>
+                    愛され続ける茶色のフォルム。<br>
+                    変わらぬ美味しさの茶まんじゅう。<br>
+                  </p>
+                  <a href="#">
+                    <p>詳しく</p>
+                    <div>
+                      <span class="scroll_line_horizontal"><span class="hover_line_horizontal"></span></span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- おすすめ4 -->
+            <div class="recommend_list scroll_off2">
+              <div class="recommend_img">
+                <div>
+                  <img src="./images/ichigo.png" class="scroll_img_off" />
+                  <img src="./images/ichigo-daifuku_ec.png" class="scroll_img_off" />
+                </div>
+              </div>
+              <div class="recommend_text">
+                <div class="font_serif">
+                  <p>いちご大福</p>
+                  <p>いちごの美味しさをそのまま<br>
+                    柔らかなお餅にたっぷりのあんこ。<br>
+                    いちごの瑞々しい甘さ。<br>
+                  </p>
+                  <a href="#">
+                    <p>詳しく</p>
+                    <div>
+                      <span class="scroll_line_horizontal"><span class="hover_line_horizontal"></span></span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- おすすめ5 -->
+            <div class="recommend_list scroll_off2">
+              <div class="recommend_img">
+                <div>
+                  <img src="./images/taiyaki.png" class="scroll_img_off" />
+                </div>
+              </div>
+              <div class="recommend_text">
+                <div class="font_serif">
+                  <p>たい焼き</p>
+                  <p>自家製のあんこを味わって欲しい<br>
+                    愛され続ける茶色のフォルム。<br>
+                    変わらぬ美味しさのたい焼き。<br>
+                  </p>
+                  <a href="#">
+                    <p>詳しく</p>
+                    <div>
+                      <span class="scroll_line_horizontal"><span class="hover_line_horizontal"></span></span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- 他のじまんのお菓子 -->
+        <section id="other" class="content_section py">
+          <div class="contents_title_vertical contents_title">
+            <div>
+              <span class="scroll_line_vertical"></span>
+            </div>
+            <h2 class="font_serif about_scroll scroll_off1">他のじまんのお菓子</h2>
+          </div>
+          <!-- 他のおすすめリスト -->
+          <div class="contents_block">
+            <div class="other_list">
+              <a href="#">
+                <div class="other_img">
+                  <img src="./images/castella.png" class="scroll_img_off" />
+                </div>
+                <div class="other_text font_serif">
+                  <p>カステラ</p>
+                </div>
+              </a>
+            </div>
+            <div class="other_list">
+              <a href="#">
+                <div class="other_img">
+                  <img src="./images/kashiwamochi.png" class="scroll_img_off" />
+                </div>
+                <div class="other_text font_serif">
+                  <p>柏餅</p>
+                </div>
+              </a>
+            </div>
+            <div class="other_list">
+              <a href="#">
+                <div class="other_img">
+                  <img src="./images/kujira-youkan_ec.png" class="scroll_img_off" />
+                </div>
+                <div class="other_text font_serif">
+                  <p>くじら羊羹</p>
+                </div>
+              </a>
+            </div>
+            <div class="other_list">
+              <a href="#">
+                <div class="other_img">
+                  <img src="./images/sakuramochi_kantou.png" class="scroll_img_off" />
+                </div>
+                <div class="other_text font_serif">
+                  <p>さくら餅</p>
+                </div>
+              </a>
+            </div>
+            <div class="other_list">
+              <a href="#">
+                <div class="other_img">
+                  <img src="./images/monaka.png" class="scroll_img_off" />
+                </div>
+                <div class="other_text font_serif">
+                  <p>もなか</p>
+                </div>
+              </a>
+            </div>
+            <div class="other_list">
+              <a href="#">
+                <div class="other_img">
+                  <img src="./images/yomogimochi.png" class="scroll_img_off" />
+                </div>
+                <div class="other_text font_serif">
+                  <p>よもぎ餅</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </section>
+        <!-- BUTTON -->
+        <section id="button" class="content_section py">
+          <div class="contents_title_vertical">
+            <div>
+              <span class="scroll_line_vertical"></span>
+            </div>
+          </div>
+          <div class="contents_block">
+            <div class="button_list">
+              <a href="#">
+                <div class="button_img">
+                  <img src="./images/azuki.png" class="scroll_img_circle" />
+                </div>
+                <div class="button_text font_serif">
+                  <p>あんこをとる</p>
+                  <p>和菓子屋さんが丁寧に作り上げた<br>おいしいあんこ。</p>
+                </div>
+              </a>
+            </div>
+            <div class="button_list">
+              <a href="#">
+                <div class="button_img">
+                  <img src="./images/wagashi_shop.png" class="scroll_img_circle" />
+                </div>
+                <div class="button_text font_serif">
+                  <p>私たちについて</p>
+                  <p>福島県石川町で明治二十年から<br>営業しております。</p>
+                </div>
+              </a>
+            </div>
+            <div class="button_list">
+              <a href="#">
+                <div class="button_img">
+                  <img src="./images/dorayaki.png" class="scroll_img_circle" />
+                </div>
+                <div class="button_text font_serif">
+                  <p>和菓子雑学</p>
+                  <p>お菓子の歴史や、豆知識などの<br>あれやこれ。</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </section>
+        <!-- NEWS -->
+        <section id="news" class="content_section py">
+          <div class="contents_title_vertical contents_title">
+            <h2 class="font_en about_scroll scroll_off1">Instagram</h2>
+          </div>
+          <div class="contents_block news_area">
+            <div class="news_list">
+              <a href="https://www.instagram.com/p/CxCP1VTpuMV/" target="_blank">
+                <div class="news_img">
+                  <img src="./images/kooribata_b.png" class="scroll_img_off" />
+                </div>
+                <div class="news_text font_serif">
+                  <p class="font_en">2023.9.11</p>
+                  <p>
+                    ・▶︎お知らせ
+                    夏季限定で販売しておりました
+                    「かき氷」
+                    昨日をもちまして終了となります。
+                  </p>
+                </div>
+              </a>
+            </div>
+            <div class="news_list">
+              <a href="https://www.instagram.com/p/Cw38WjkPaOw/" target="_blank">
+                <div class="news_img">
+                  <img src="./images/glasses_black.png" class="scroll_img_off" />
+                </div>
+                <div class="news_text font_serif">
+                  <p class="font_en">2023.9.7</p>
+                  <p>
+                    ・長年使ってるメガネ
+                    少々ガタがきたので
+                    自力で修理して
+                    延命させることに。
+                  </p>
+                </div>
+              </a>
+            </div>
+            <div class="news_list">
+              <a href="https://www.instagram.com/p/Cwg2gE3JqUk/" target="_blank">
+                <div class="news_img">
+                  <img src="./images/school.png" class="scroll_img_off" />
+                </div>
+                <div class="news_text font_serif">
+                  <p class="font_en">2023.8.29</p>
+                  <p>
+                    ・小学校の２学期も始まり
+                    登校初日の４年生クラスでは
+                    １分間スピーチが行われたそうです。
+                  </p>
+                </div>
+              </a>
+            </div>
+            <div class="news_list">
+              <a href="https://www.instagram.com/reel/CweHx1agn9s/" target="_blank">
+                <div class="news_img">
+                  <img src="./images/lemon_cut.png" class="scroll_img_off" />
+                </div>
+                <div class="news_text font_serif">
+                  <p class="font_en">2023.8.28</p>
+                  <p>
+                    ・レモンのあんこを練ります。
+                    冷やしたクリームチーズを
+                    レモンのあんこでつつみます。
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </section>
+      </div>
+      <!-- フッター -->
+      <div class="footer">
+        <div class="footer_block">
+          <div class="footer_onlineshop">	
+						<a href="#" class="font_serif">
+              <div class="footer_img">
+                <img src="./images/dorayaki_marugoto.png" class="scroll_img_off" >
+                <img src="./images/dorayaki_hanbun.png" class="scroll_img_off" >
+              </div>
+              <p>オンラインショップ</p>
+              <div>
+                <span class="scroll_line_horizontal"><span class="hover_line_horizontal"></span></span>
+              </div>
+              <p class="font_en">ONLINE SHOP</p>
+            </a>
+					</div>
         </div>
       </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script>
+      // ハンバーガーメニュー
       document.getElementById('header_menu').onclick = function() {
         this.classList.toggle('active');
       };
 
+      // スライドアニメーション
       var swiper = new Swiper(".swiper", {
         slidesPerView: 1,
         loop: true,
@@ -125,15 +473,86 @@
           delay: 2000, // 2秒後に次のスライドへ
         },
         breakpoints: {
-          768: {
+          0: {
+            slidesPerView: 2,
+            spaceBetween: 50,
+          },
+          600: {
             slidesPerView: 2.5,
             spaceBetween: 120,
           },
-          1024: {
+          900: {
             slidesPerView: 4.5,
             spaceBetween: 100,
           },
         },
+      });
+
+
+      function scrollAnime(){
+        $('.scroll_line_vertical').each(function(){
+          let elemPos = $(this).offset().top;
+          let scroll = $(window).scrollTop();
+          let windowHeight = $(window).height();
+          if (scroll >= elemPos - windowHeight){
+            $(this).addClass('scroll_line_on1');
+          }else{
+            $(this).removeClass('scroll_line_on1');
+          }
+        });
+
+        $('.about_scroll').each(function(){
+          let elemPos = $(this).offset().top + 30;
+          let scroll = $(window).scrollTop();
+          let windowHeight = $(window).height();
+          if (scroll >= elemPos - windowHeight){
+            $(this).removeClass('scroll_off1');
+            $(this).addClass('scroll_on1');
+          }else{
+            $(this).removeClass('scroll_on1');
+            $(this).addClass('scroll_off1');
+          }
+        });
+
+        $('.recommend_list, .other_list, .news_list, .footer_onlineshop').each(function(){
+          let elemPos = $(this).offset().top + 30;
+          let scroll = $(window).scrollTop();
+          let windowHeight = $(window).height();
+          if (scroll >= elemPos - windowHeight){
+            $(this).removeClass('scroll_off2');
+            $(this).addClass('scroll_on2');
+            $(this).children('.recommend_img').children('div').children('img').removeClass('scroll_img_off');
+            $(this).children('.recommend_img').children('div').children('img').addClass('scroll_img_on');
+            $(this).children('a').children('div').children('img').removeClass('scroll_img_off');
+            $(this).children('a').children('div').children('img').addClass('scroll_img_on');
+          }else{
+            $(this).removeClass('scroll_on2');
+            $(this).addClass('scroll_off2');
+            $(this).children('.recommend_img').children('div').children('img').removeClass('scroll_img_on');
+            $(this).children('.recommend_img').children('div').children('img').addClass('scroll_img_off');
+            $(this).children('a').children('div').children('img').removeClass('scroll_img_on');
+            $(this).children('a').children('div').children('img').addClass('scroll_img_off');
+          }
+        });
+
+        $('.button_list').each(function(){
+          let elemPos = $(this).offset().top + 30;
+          let scroll = $(window).scrollTop();
+          let windowHeight = $(window).height();
+          if (scroll >= elemPos - windowHeight) {
+            $(this).removeClass('scroll_off2');
+            $(this).addClass('scroll_on2');
+            $(this).children('a').children('.button_img').children('img').addClass('scroll_img_circle');
+          } else {
+            $(this).removeClass('scroll_on2');
+            $(this).addClass('scroll_off2');
+            $(this).children('a').children('.button_img').children('img').removeClass('scroll_img_circle');
+          }
+        });
+      }
+
+      $(window).scroll(function (){
+        scrollAnime();
       });
 
     </script>
