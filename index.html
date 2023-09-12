@@ -30,8 +30,155 @@
         <div class="menu_inner">
           <div class="menu_block font_serif">
             <div class="menu_list">
-              <a href="#">
+              <a href="#" class="link">
                 <p>トップ</p>
+                <div>
+                  <span class="hover_line_horizontal"></span>
+                </div>
+              </a>
+            </div>
+            <div class="menu_list">
+              <a href="#" class="link">
+                <p>お菓子の紹介</p>
+                <div>
+                  <span class="hover_line_horizontal"></span>
+                </div>
+              </a>
+            </div>
+            <div class="menu_list">
+              <a href="#" class="link">
+                <p class="">どら焼き</p>
+                <div>
+                  <span class="hover_line_horizontal"></span>
+                </div>
+              </a>
+              <p class="">｜</p>
+
+              <a href="#" class="link">
+                <p class="">おだんご</p>
+                <div>
+                  <span class="hover_line_horizontal"></span>
+                </div>
+              </a>
+              <p class="">｜</p>
+
+              <a href="#" class="link">
+                <p class="">おまんじゅう</p>
+                <div>
+                  <span class="hover_line_horizontal"></span>
+                </div>
+              </a>
+              <p class="">｜</p>
+
+              <a href="#p" class="link">
+                <p class="">いちご大福</p>
+                <div>
+                  <span class="hover_line_horizontal"></span>
+                </div>
+              </a>
+              <p class="">｜</p>
+
+              <a href="#" class="link">
+                <p class="">たい焼き</p>
+                <div>
+                  <span class="hover_line_horizontal"></span>
+                </div>
+              </a>
+              <p class="">｜</p>
+
+              <a href="#" class="link">
+                <p class="">カステラ</p>
+                <div>
+                  <span class="hover_line_horizontal"></span>
+                </div>
+              </a>
+              <p class="">｜</p>
+
+              <a href="#" class="link">
+                <p class="">柏餅</p>
+                <div>
+                  <span class="hover_line_horizontal"></span>
+                </div>
+              </a>
+              <p class="">｜</p>
+
+              <a href="#" class="link">
+                <p class="">くじら羊羹</p>
+                <div>
+                  <span class="hover_line_horizontal"></span>
+                </div>
+              </a>
+              <p class="">｜</p>
+
+              <a href="#" class="link">
+                <p class="">さくら餅</p>
+                <div>
+                  <span class="hover_line_horizontal"></span>
+                </div>
+              </a>
+              <p class="">｜</p>
+
+              <a href="#" class="link">
+                <p class="">もなか</p>
+                <div>
+                  <span class="hover_line_horizontal"></span>
+                </div>
+              </a>
+              <p class="">｜</p>
+
+              <a href="#" class="link">
+                <p class="">よもぎ餅</p>
+                <div>
+                  <span class="hover_line_horizontal"></span>
+                </div>
+              </a>
+
+            </div>
+            <div class="menu_list">
+              <a href="#" class="link">
+                <p class="">あんこをとる</p>
+                <div>
+                  <span class="hover_line_horizontal"></span>
+                </div>
+              </a>
+            </div>
+            <div class="menu_list">
+              <a href="#" class="link">
+                <p class="">店舗情報</p>
+                <div>
+                  <span class="hover_line_horizontal"></span>
+                </div>
+              </a>
+            </div>
+            <div class="menu_list">
+              <a href="#" class="link">
+                <p class="">和菓子雑学</p>
+                <div>
+                  <span class="hover_line_horizontal"></span>
+                </div>
+              </a>
+            </div>
+            <div class="menu_logo">
+              <a href="https://kuwazawa-wagashi.com/" class="link">
+                <img src="https://kuwazawa-wagashi.com/img/logo_img1w.svg">
+              </a>
+            </div>
+            <div class="menu_tel">
+              <p class="font_en">
+                TEL.<a href="tel:0247-26-2851">0247-26-2851</a>
+              </p>
+            </div>
+            <div class="menu_onlineshop">
+              <a href="https://kuwazawa.base.shop/" target="_blank">
+                <p class="font_en">Online Shop</p>
+              </a>
+            </div>
+            <div class="menu_sns">	
+              <a href="https://www.instagram.com/kuwazawa_wagashi/" target="_blank">
+                <img src="https://kuwazawa-wagashi.com/img/icon_img2w.svg">
+              </a>
+              <a href="https://kuwazawa-wagashi.com/contact.php" class="link">
+                <img src="https://kuwazawa-wagashi.com/img/icon_img3w.svg">
               </a>
             </div>
           </div>
@@ -577,6 +724,17 @@
         }
       });
 
+      // メニューホバー時
+      $('.link').on('mouseenter', function(){
+        $(this).removeClass('line_off');
+        $(this).addClass('line_on');
+      });
+      $('.link').on('animationend', function(){
+        $(this).removeClass('line_on');
+        $(this).addClass('line_off');
+      });
+
+      // スライド
       function slider() {
         const slides = $('.slide_list');
 
