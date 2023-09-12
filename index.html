@@ -25,14 +25,40 @@
           </div>
         </div>
       </div>
+      <!-- メニュー -->
+      <div class="menu">
+        <div class="menu_inner">
+          <div class="menu_block font_serif">
+            <div class="menu_list">
+              <a href="#">
+                <p>トップ</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
       <!-- ヘッダー -->
       <div class="header">
         <div class="header_block">
-          <!-- メニュー -->
-          <div id="header_menu" class="header_menu">
-            <span class="span1"></span>
-            <span class="span2"></span>
-            <span class="span3"></span>
+          <!-- ハンバーガーメニュー -->
+          <div id="header_button" class="header_button">
+            <a href="javascript:void(0);" class="menu_link">
+              <div>
+                <span>
+                  <span></span>
+                </span>
+              </div>
+              <div>
+                <span>
+                  <span></span>
+                </span>
+              </div>
+              <div>
+                <span>
+                  <span></span>
+                </span>
+              </div>
+            </a>
           </div>
           <!-- オンラインショップ -->
           <div class="header_onlineshop">
@@ -539,9 +565,17 @@
       });
 
       // ハンバーガーメニュー
-      document.getElementById('header_menu').onclick = function() {
-        this.classList.toggle('active');
-      };
+      $('.header_button').on('click', function(){
+        if ($(this).hasClass('active')) {
+          $(this).removeClass('active');
+          $('.menu').parent('.wrapper').addClass('menu_off');
+          $('.menu').parent('.wrapper').removeClass('menu_on');
+        } else {
+          $(this).addClass('active');
+          $('.menu').parent('.wrapper').addClass('menu_on');
+          $('.menu').parent('.wrapper').removeClass('menu_off');
+        }
+      });
 
       function slider() {
         const slides = $('.slide_list');
