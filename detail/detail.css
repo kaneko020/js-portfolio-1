@@ -142,7 +142,7 @@
   }
 }
 
-.dorayaki .firstview_img div span {
+.firstview_img div span {
   background-image: linear-gradient(200deg, rgb(255, 255, 255) 30%, rgb(238, 238, 238));
 }
 
@@ -159,6 +159,11 @@
   object-fit: cover;
 }
 
+.odango .firstview_img div span img {
+  width: 300px;
+  object-fit: cover;
+}
+
 @media (min-width: 560px) and (max-width: 999px) {
   #item .firstview_img {
     height: 300px;
@@ -170,6 +175,10 @@
 
   .firstview_img div span img {
     width: 250px;
+    object-fit: cover;
+  }
+  .odango .firstview_img div span img {
+    width: 200px;
     object-fit: cover;
   }
 }
@@ -185,6 +194,11 @@
 
   .firstview_img div span img {
     width: 170px;
+    object-fit: cover;
+  }
+
+  .odango .firstview_img div span img {
+    width: 140px;
     object-fit: cover;
   }
 }
