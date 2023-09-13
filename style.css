@@ -12,6 +12,13 @@ body, img {
 
 a {
   text-decoration: none;
+  color: rgba(90,70,32,1);
+  cursor: pointer;
+}
+
+a[href^="tel:"] {
+  cursor: default!important;
+  pointer-events: none!important;
 }
 
 img {
@@ -30,6 +37,134 @@ img {
   color: #5a4620;
 }
 
+.load_off .load {
+  animation: load_off0 .5s ease-in-out forwards;
+}
+
+.load_off .firstview_letter {
+  opacity: 0;
+}
+
+.load, .load_block, .load_inner {
+  width: 100%;
+  height: 100%;
+}
+
+.load {
+  background-color: #fffbf2;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 800;
+  cursor: default;
+  pointer-events: none;
+}
+
+.load_block {
+  position: relative;
+}
+
+.load_logo {
+  width: 80px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -40px 0 0 -40px;
+}
+
+@keyframes load_off0 {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.load_off .fix {
+  animation: load_off3 .5s ease-in-out forwards;
+}
+
+@keyframes load_off3 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fix {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 200;
+  cursor: default;
+  pointer-events: none;
+}
+
+.fix_block {
+  position: relative;
+}
+
+.fix_scroll {
+  height: 60px;
+  position: absolute;
+  bottom: 60px;
+  left: 60px;
+}
+
+.load_off .fix_scroll div {
+  animation: fix_scroll0 2.5s ease-in-out 1s infinite;
+}
+
+@keyframes fix_scroll0 {
+  0%, 100% {
+    top: 0;
+    transform: translateY(0);
+  }
+  50% {
+    top: 100%;
+    transform: translateY(-100%);
+  }
+}
+
+.fix_scroll div {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.load_off .fix_scroll div span {
+  animation: fix_scroll1 .5s ease-in-out 1s forwards;
+}
+
+@keyframes fix_scroll1 {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.fix_scroll span {
+  width: 100%;
+  height: 100%;
+  display: block;
+  background-color: rgba(90,70,32,1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
 .menu_on .menu {
   animation: menu_on0 .5s ease-in-out forwards;
   cursor: auto;
@@ -39,9 +174,11 @@ img {
 @keyframes menu_on0 {
   0% {
     opacity: 0;
+    z-index: 0;
   }
   100% {
     opacity: 1;
+    z-index: 300;
   }
 }
 
@@ -52,9 +189,11 @@ img {
 @keyframes menu_off0 {
   0% {
     opacity: 1;
+    z-index: 300;
   }
   100% {
     opacity: 0;
+    z-index: 0;
   }
 }
 
@@ -64,7 +203,6 @@ img {
   top: 0;
   left: 0;
   background-color: rgba(90,70,32,.95);
-  z-index: 300;
   width: 100%;
   height: 100%;
   overflow: hidden;
@@ -280,6 +418,10 @@ img {
   color: rgba(255,255,255,1);
 }
 
+.menu_tel p a {
+  color: rgba(255,255,255,1);
+}
+
 .menu_onlineshop {
   width: 120px;
   text-align: center;
@@ -394,50 +536,6 @@ img {
     bottom: 90px;
     right: 30px;
     margin: 0;
-  }
-}
-
-.load_off .load {
-  animation: load_off0 .5s ease-in-out forwards;
-}
-
-.load_off .firstview_letter {
-  opacity: 0;
-}
-
-.load, .load_block, .load_inner {
-  width: 100%;
-  height: 100%;
-}
-
-.load {
-  background-color: #fffbf2;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 800;
-  cursor: default;
-  pointer-events: none;
-}
-
-.load_block {
-  position: relative;
-}
-
-.load_logo {
-  width: 80px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin: -40px 0 0 -40px;
-}
-
-@keyframes load_off0 {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
   }
 }
 
@@ -2219,11 +2317,6 @@ img {
   position: absolute;
 }
 
-.pc .footer_contact a {
-  transition-duration: .5s;
-  transition-timing-function: ease-in-out;
-  transition-property: background-color;
-}
 .footer_contact a {
   display: block;
   width: 100%;
@@ -2231,17 +2324,25 @@ img {
   background-color: #5a462000;
   border: 1px solid #5a4620;
   border-radius: 18px;
-}
-
-.pc .footer_contact a p {
   transition-duration: .5s;
   transition-timing-function: ease-in-out;
-  transition-property: color;
+  transition-property: background-color;
 }
+
+.footer_contact a:hover {
+  background-color: rgba(90,70,32,1);
+}
+.footer_contact a:hover p {
+  color: rgba(255,255,255,1);
+}
+
 .footer_contact a p {
   font-size: 14px;
   line-height: 32px;
   font-weight: 600;
+  transition-duration: .5s;
+  transition-timing-function: ease-in-out;
+  transition-property: color;
 }
 
 .footer_sns {
