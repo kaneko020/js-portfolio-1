@@ -873,7 +873,7 @@ img {
 }
 
 #firstview {
-  padding-top: 0;
+  padding-top: 165px;
 }
 
 #firstview .contents_section_inner {
@@ -1616,7 +1616,7 @@ img {
   }
 }
 
-.scroll_on1 {
+.load_off .scroll_on1 {
   animation: scroll_on1 1s ease-in-out forwards;
 }
 
@@ -1921,7 +1921,7 @@ img {
   transform: translateX(-100%);
 }
 
-.scroll_on2 {
+.load_off .scroll_on2 {
   animation: scroll_on2 1s ease-in-out forwards;
 }
 

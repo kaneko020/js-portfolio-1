@@ -7,7 +7,7 @@
   <title>ポートフォリオ</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css" />
   <link rel="stylesheet" href="../style.css">
-  <link rel="stylesheet" href="contact.css">
+  <link rel="stylesheet" href="./contact.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&amp;family=Shippori+Mincho:wght@500;600&amp;display=swap" rel="stylesheet">
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -239,10 +239,117 @@
         <div id="contact" class="contents_inner">
           <section id="firstview" class="contents_section">
             <div class="contents_section_inner">
-              <div class="contents_title contents_title_vertical"></div>
+              <div class="contents_title contents_title_vertical">
+                <h1 class="font_serif">お問い合わせ</h1>
+                <div>
+                  <span class="scroll_line_vertical scroll_line_on1"></span>
+                </div>
+              </div>
             </div>
           </section>
-          
+          <section id="form" class="contents_section">
+            <div class="contents_section_inner">
+              <div class="contents_block">
+                <div class="form_complete none scroll_on1">
+                  <p class="font_serif2">お問い合わせを受け付けました。</p>		
+                </div>
+                <div class="form_text scroll_on3">
+                  <p class="font_serif2">ご予約等、お気軽にご連絡ください。</p>
+                  <p class="font_serif2">※ネット広告・動画製作等の営業メール等は
+                    <br class="sp_disp">
+                    ご遠慮くださるようお願い申し上げます。
+                  </p>					
+                </div>
+                <div class="form_area scroll_on3">
+                  <form id="mailformpro" action="" method="post">
+                    <div class="form_list">
+                      <div class="form_item">
+                        <p class="font_serif">お名前 *</p>
+                      </div>
+                      <div class="form_content">
+                        <input type="text" name="name" class="form_target" id="mfp_element_0">
+                        <div class="mfp_err" id="name_error">
+                          お名前が入力されていません。
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form_list">
+                      <div class="form_item">
+                        <p class="font_serif">ふりがな *</p>
+                      </div>
+                      <div class="form_content">
+                        <input type="text" name="name_kana" class="form_target" id="mfp_element_1">
+                        <div class="mfp_err" id="name_kana_error">
+                          ふりがなが入力されていません。
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form_list">
+                      <div class="form_item">
+                        <p class="font_serif">電話番号 *</p>
+                      </div>
+                      <div class="form_content">
+                        <input type="text" name="tel" class="form_target" id="mfp_element_2">
+                        <div class="mfp_err" id="tel_error">
+                          電話番号が入力されていません。
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form_list">
+                      <div class="form_item">
+                        <p class="font_serif">メールアドレス *</p>
+                      </div>
+                      <div class="form_content">
+                        <input type="email" data-type="email" name="email" class="form_target" id="mfp_element_3">
+                        <div class="mfp_err" id="email_error">
+                          メールアドレスが入力されていません。
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form_list">
+                      <div class="form_item">
+                        <p class="font_serif">メールアドレス（確認）*</p>
+                      </div>
+                      <div class="form_content">
+                        <input type="email" data-type="email" name="email_conf" class="form_target" id="mfp_element_4">
+                        <div class="mfp_err" id="email_conf_error">
+                          確認用が入力されていません。
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form_list">
+                      <div class="form_item">
+                        <p class="font_serif">お問い合わせ内容 *</p>
+                      </div>
+                      <div class="form_content">
+                        <textarea class="form_target" id="mfp_element_5"></textarea>
+                        <div class="mfp_err" id="content_error">
+                          お問い合わせ内容が入力されていません。
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form_list">									
+                      <label id="mfp_element_6_label" class="mfp_not_checked" style="cursor: pointer;">
+                        <input type="checkbox" name="プライバシーポリシー" value="" class="form_target mfp_element_checkbox mfp_element_all" id="mfp_element_6">
+                        <input type="hidden" name="mfp_プライバシーポリシー_checkobj" id="mfp_プライバシーポリシー_checkobj" value="1" class=" mfp_element_hidden mfp_element_all">
+                        <p class="font_serif">
+                          <a href="#policy" class="target_link line_link">
+                            プライバシーポリシー
+                            <span>
+                              <span class="hover_line_horizontal"></span>
+                            </span>
+                          </a>
+                          に同意 *
+                        </p>
+                        <div class="mfp_err" id="errormsg_プライバシーポリシー"></div>
+                        <div class="mfp_err" id="errormsg_mfp_プライバシーポリシー_checkobj"></div>
+                      </label>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </section>
         </div>
       </div>
       <!-- フッター -->
@@ -303,5 +410,15 @@
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="../common.js"></script>
+    <script>
+      $('.line_link').on('mouseenter', function(){
+        $(this).removeClass('line_off');
+        $(this).addClass('line_on');
+      });
+      $('.line_link').on('animationend', function(){
+        $(this).removeClass('line_on');
+        $(this).addClass('line_off');
+      });
+    </script>
   </body>
 </html>
