@@ -1536,8 +1536,8 @@ img {
   background-color: #5a4620;
 }
 
-.scroll_line_on1 {
-  animation: scroll_line_on1 2s ease-in-out forwards;
+.load_off .scroll_line_on1 {
+  animation: scroll_line_on1 1s ease-in-out forwards;
 }
 
 @keyframes scroll_line_on1 {
@@ -1881,11 +1881,11 @@ img {
   background-color: #5a4620;
 }
 
-.scroll_line_horizontal {
+.scroll_line_on2 {
   animation: scroll_line_on2 1s ease-in-out forwards;
 }
 
-.recommend_text div a:hover .hover_line_horizontal {
+.recommend_text div a:hover .hover_line_horizontal, .footer_onlineshop a:hover .hover_line_horizontal {
   animation: scroll_line_on2 1s ease-in-out forwards;
 }
 
@@ -1931,8 +1931,8 @@ img {
   transform: scale(.9);
 }
 
-.scroll_img_on {
-  animation: scroll_img_on 1s ease-in-out forwards;
+.scroll_img_big {
+  animation: scroll_img_big 1s ease-in-out forwards;
 }
 
 @keyframes scroll_on2 {
@@ -1946,7 +1946,7 @@ img {
   }
 }
 
-@keyframes scroll_img_on {
+@keyframes scroll_img_big {
   0% {
     transform: scale(.9);
   }
@@ -2091,6 +2091,7 @@ img {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  background-color: #c5bba8;
 }
 
 .button_img div span img, .news_img div span img {
@@ -2099,15 +2100,11 @@ img {
   transition-timing-function: ease-in-out;
 }
 
-.scroll_img_small {
-  background-color: #c5bba8;
-}
-
 .scroll_on2 .scroll_img_circle {
-  animation: scroll_img_on1_1 1s ease-in-out forwards;
+  animation: scroll_img_circle 1s ease-in-out forwards;
 }
 
-@keyframes scroll_img_on1_1 {
+@keyframes scroll_img_circle {
   0% {
     border-radius: 0;
   }
@@ -2116,11 +2113,11 @@ img {
   }
 }
 
-.scroll_on .scroll_img_small {
-  animation: scroll_img_on4 1s ease-in-out forwards;
+.scroll_img_small {
+  animation: scroll_img_small 1s ease-in-out forwards;
 }
 
-@keyframes scroll_img_on4 {
+@keyframes scroll_img_small {
   0% {
     transform: scale(1.1);
   }
