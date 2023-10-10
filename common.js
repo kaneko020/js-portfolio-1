@@ -3,7 +3,7 @@ $(window).on('load', function(){
   $('html,body').animate({ scrollTop: 0 }, '1');
   setTimeout(function(){
     $('.load').parent('.wrapper').addClass('load_off');
-  },1000);
+  },800);
 });
 
 // ハンバーガーメニュー
