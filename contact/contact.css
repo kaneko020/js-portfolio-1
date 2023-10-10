@@ -143,7 +143,7 @@ label p::before {
   background-size: 20px 20px;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url(https://kuwazawa-wagashi.com/img/input_off.svg);
+  background-image: url(../images/wagashi_input.png);
 }
 
 label p a>span:nth-last-child(1) {
@@ -154,7 +154,6 @@ label p a>span:nth-last-child(1) {
   bottom: 0;
   left: 0;
   overflow: hidden;
-  background-color: rgba(90,70,32,1);
 }
 
 label p a span span {
@@ -162,14 +161,27 @@ label p a span span {
   width: 100%;
   height: 100%;
   top: 0;
+  background-color: rgba(90,70,32,1);
+}
+
+label input:checked+.mfp_element_hidden+p::before {
+  background-image: url(../images/wagashi_input_on.png);
+}
+
+.mfp_err {
+  margin: 15px 0 0;
+  font-size: 12px;
+  line-height: 12px;
+  color: rgba(255,0,0,1);
+  font-family: '游ゴシック体',YuGothic,'游ゴシック','Yu Gothic',sans-serif;
 }
 
 .line_off .hover_line_horizontal {
-  animation: hover_line_off0 .5s ease-in-out forwards;
+  animation: hover_line_off0 1s ease-in-out forwards;
 }
 
 .line_on .hover_line_horizontal {
-  animation: hover_line_on0 .5s ease-in-out forwards;
+  animation: hover_line_on0 1s ease-in-out forwards;
 }
 
 @keyframes hover_line_off0 {
@@ -197,4 +209,99 @@ label p a span span {
     opacity: 1;
     transform: translateX(0);
   }
+}
+
+@keyframes hover_line_on0 {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  49% {
+    opacity: 1;
+    transform: translateX(100%);
+  }
+  49.5% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  50.5% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  51% {
+    opacity: 1;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.form_button {
+  width: 150px;
+  margin: 100px auto 0;
+}
+
+.form_button input {
+  transition-duration: .5s;
+  transition-timing-function: ease-in-out;
+  transition-property: background-color,color;
+  padding: 0 0 2px;
+  font-size: 14px;
+  line-height: 32px;
+  font-weight: 700;
+  text-align: center;
+  color: rgba(255,255,255,1);
+  border: 1px solid rgba(90,70,32,1);
+  border-radius: 18px;
+  cursor: pointer;
+  pointer-events: auto;
+  background-color: rgba(90,70,32,1);
+}
+
+.form_button input:hover {
+  background-color: rgba(90,70,32,0);
+  color: rgba(90,70,32,1);
+}
+
+.contents_inner>.contents_section:nth-last-child(1) {
+  padding-bottom: 120px;
+}
+
+#policy .contents_section_inner {
+  max-width: 700px;
+}
+
+.scroll_on2 {
+  animation: scroll_on2 1s ease-in-out forwards;
+}
+
+.policy_text::-webkit-scrollbar {
+  display: none;
+}
+
+.policy_text {
+  width: 100%;
+  height: 300px;
+  padding: 60px;
+  border: 1px solid rgba(90,70,32,1);
+  border-radius: 30px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.policy_text>p:nth-child(1) {
+  font-size: 18px;
+  line-height: 36px;
+  font-weight: 600;
+  text-align: center;
+  margin: 0 0 30px;
+}
+
+.policy_text>p:nth-child(2) {
+  font-size: 14px;
+  line-height: 28px;
+  font-weight: 500;
+  text-align: justify;
 }

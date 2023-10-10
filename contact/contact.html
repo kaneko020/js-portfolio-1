@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ポートフォリオ</title>
+  <title>お問い合わせ</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css" />
   <link rel="stylesheet" href="../style.css">
   <link rel="stylesheet" href="./contact.css">
@@ -21,7 +21,7 @@
         <div class="load_inner">
           <div class="load_block">
             <div class="load_logo">
-              <img src="https://kuwazawa-wagashi.com/img/logo_img1b.svg">
+              <img src="../images/wagashido1.png">
             </div>
           </div>
         </div>
@@ -173,25 +173,25 @@
             </div>
             <div class="menu_logo">
               <a href="../index.html" class="link">
-                <img src="https://kuwazawa-wagashi.com/img/logo_img1w.svg">
+                <img src="../images/wagashido2.png">
               </a>
             </div>
             <div class="menu_tel">
               <p class="font_en">
-                TEL.<a href="tel:0247-26-2851">0247-26-2851</a>
+                TEL.<a href="tel:0000-00-0000">0000-00-0000</a>
               </p>
             </div>
             <div class="menu_onlineshop">
-              <a href="https://kuwazawa.base.shop/" target="_blank">
+              <a href="https://jutjoy.com/" target="_blank">
                 <p class="font_en">Online Shop</p>
               </a>
             </div>
             <div class="menu_sns">	
-              <a href="https://www.instagram.com/kuwazawa_wagashi/" target="_blank">
-                <img src="https://kuwazawa-wagashi.com/img/icon_img2w.svg">
+              <a href="https://jutjoy.com/" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
               </a>
-              <a href="#" class="link">
-                <img src="https://kuwazawa-wagashi.com/img/icon_img3w.svg">
+              <a href="" class="link">
+                <i class="fa-regular fa-envelope"></i>
               </a>
             </div>
           </div>
@@ -222,14 +222,14 @@
           </div>
           <!-- オンラインショップ -->
           <div class="header_onlineshop">
-            <a href="https://kuwazawa.base.shop/" target="_blank">
+            <a href="https://jutjoy.com/" target="_blank">
               <i class="fa-solid fa-cart-shopping"></i>
             </a>
           </div>
           <!-- タイトル -->
           <div class="header_title">
             <a href="../index.html">
-              <p class="font_serif">和菓子</p>
+              <p class="font_serif">わがし堂</p>
             </a>
           </div>
         </div>
@@ -247,6 +247,7 @@
               </div>
             </div>
           </section>
+          <!-- FORM -->
           <section id="form" class="contents_section">
             <div class="contents_section_inner">
               <div class="contents_block">
@@ -330,10 +331,10 @@
                     </div>
                     <div class="form_list">									
                       <label id="mfp_element_6_label" class="mfp_not_checked" style="cursor: pointer;">
-                        <input type="checkbox" name="プライバシーポリシー" value="" class="form_target mfp_element_checkbox mfp_element_all" id="mfp_element_6">
-                        <input type="hidden" name="mfp_プライバシーポリシー_checkobj" id="mfp_プライバシーポリシー_checkobj" value="1" class=" mfp_element_hidden mfp_element_all">
+                        <input type="checkbox" name="privacy_policy" value="" class="form_target mfp_element_checkbox mfp_element_all" id="mfp_element_6">
+                        <input type="hidden" name="mfp_privacy_policy_checkobj" id="mfp_privacy_policy_checkobj" value="1" class=" mfp_element_hidden mfp_element_all">
                         <p class="font_serif">
-                          <a href="#policy" class="target_link line_link">
+                          <a href="#policy" class="target_link line_link line_off">
                             プライバシーポリシー
                             <span>
                               <span class="hover_line_horizontal"></span>
@@ -341,14 +342,69 @@
                           </a>
                           に同意 *
                         </p>
-                        <div class="mfp_err" id="errormsg_プライバシーポリシー"></div>
-                        <div class="mfp_err" id="errormsg_mfp_プライバシーポリシー_checkobj"></div>
+                        <div class="mfp_err" id="errormsg_privacy_policy" style="display: none;">
+                          プライバシーポリシーがチェックされていません。
+                        </div>
+                        <div class="mfp_err" id="errormsg_mfp_privacy_policy_checkobj"></div>
                       </label>
+                    </div>
+                    <div class="form_list">									
+                      <label id="mfp_element_8_label" class="mfp_not_checked" style="cursor: pointer;">
+                        <input type="checkbox" name="content_conf" value="" class="form_target mfp_element_checkbox mfp_element_all" id="mfp_element_8">
+                        <input type="hidden" name="mfp_content_conf_checkobj" id="mfp_content_conf_checkobj" value="1" class=" mfp_element_hidden mfp_element_all">
+                        <p class="font_serif">
+                          上記の内容を確認し、間違いはありません。*
+                        </p>
+                        <div class="mfp_err" id="errormsg_content_conf" style="display: none;">
+                          内容確認がチェックされていません。
+                        </div>
+                        <div class="mfp_err" id="errormsg_mfp_content_conf_checkobj"></div>
+                      </label>
+                    </div>
+                    <div class="form_button">
+                      <input class="font_serif2 mfp_element_submit mfp_element_all" type="submit" value="送　信">
                     </div>
                   </form>
                 </div>
               </div>
             </div>
+          </section>
+          <!-- POLICY -->
+          <section id="policy" class="contents_section">
+            <div class="contents_section_inner">	
+              <div class="contents_block">
+                <div class="policy_text scroll_element scroll_on scroll_on2">
+                  <p class="font_serif">プライバシーポリシー</p>
+                  <p class="font_serif">
+                    わがし堂（以下「当店」）は、以下のとおり個人情報保護方針を定め、個人情報保護の仕組みを構築し、全従業員に個人情報保護の重要性の認識と取組みを徹底させることにより、個人情報の保護を推進致します。
+                    <br><br>
+                    ●個人情報の管理<br>
+                    当店は、お客様の個人情報を正確かつ最新の状態に保ち、個人情報への不正アクセス・紛失・破損・改ざん・漏洩などを防止するため、セキュリティシステムの維持・管理体制の整備・社員教育の徹底等の必要な措置を講じ、安全対策を実施し個人情報の厳重な管理を行ないます。
+                    <br><br>
+                    ●個人情報の利用目的<br>
+                    お客様からお預かりした個人情報は、当店からのご連絡や業務のご案内やご質問に対する回答として、電子メールや資料のご送付に利用いたします。
+                    <br><br>
+                    ●個人情報の第三者への開示・提供の禁止<br>
+                    当店は、お客様よりお預かりした個人情報を適切に管理し、次のいずれかに該当する場合を除き、個人情報を第三者に開示いたしません。<br>
+                    ・お客様の同意がある場合<br>
+                    ・お客様が希望されるサービスを行なうために当店が業務を委託する業者に対して開示する場合<br>
+                    ・法令に基づき開示することが必要である場合
+                    <br><br>
+                    ●個人情報の安全対策<br>
+                    当店は、個人情報の正確性及び安全性確保のために、セキュリティに万全の対策を講じています。
+                    <br><br>
+                    ●ご本人の照会<br>
+                    お客様がご本人の個人情報の照会・修正・削除などをご希望される場合には、ご本人であることを確認の上、対応させていただきます。
+                    <br><br>
+                    ●法令、規範の遵守と見直し<br>
+                    当店は、保有する個人情報に関して適用される日本の法令、その他規範を遵守するとともに、本ポリシーの内容を適宜見直し、その改善に努めます。
+                    <br><br>
+                    ●お問い合わせ<br>
+                    当店の個人情報の取扱に関するお問い合わせは、下記までご連絡ください。
+                  </p>
+                </div>
+              </div>
+            </div>		
           </section>
         </div>
       </div>
@@ -357,7 +413,7 @@
         <div class="footer_inner">
           <div class="footer_block">
             <div class="footer_onlineshop scroll_element">	
-              <a href="https://kuwazawa.base.shop/" target="_blank" class="font_serif">
+              <a href="https://jutjoy.com/" target="_blank" class="font_serif">
                 <div class="footer_img">
                   <img src="../images/dorayaki_marugoto.png" class="scroll_img_off" >
                   <img src="../images/dorayaki_hanbun.png" class="scroll_img_off" >
@@ -371,11 +427,11 @@
             </div>
             <div class="footer_logo">
               <a href="../index.html">
-                <img src="https://kuwazawa-wagashi.com/img/logo_img1b.svg">
+                <img src="../images/wagashido1.png">
               </a>
             </div>
             <div class="footer_text font_serif">
-              <p class="">くわざわ</p>
+              <p class="">わがし堂</p>
               <p class="">
                 営業時間／AM8:00～PM18:30
                 <br class="tb_disp sp_disp">
@@ -383,25 +439,25 @@
               </p>	
               <p class="">
                 TEL.
-                <a href="tel:0247-26-2851">0247-26-2851　</a>
-                FAX.0247-26-8511
+                <a href="tel:0000-00-0000">0000-00-0000　</a>
+                FAX.0000-00-0000
                 <br class="tb_disp sp_disp">
                 <span class="pc_disp">　</span>
-                〒963-7808 福島県石川郡石川町双里字神主20-1
+                〒000-0000 東京都渋谷区神南1-20-1
               </p>	
             </div>
             <div class="footer_contact font_serif">
-              <a href="#">
+              <a href="">
                 <p class="">お問い合わせ</p>
               </a>
             </div>
             <div class="footer_sns">
-              <a href="https://www.instagram.com/kuwazawa_wagashi/" target="_blank">
-                <img src="https://kuwazawa-wagashi.com/img/icon_img2b.svg">
+              <a href="https://jutjoy.com/" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
               </a>
             </div>
             <div class="footer_copyright font_serif">
-              <p class="font_en">@2022 okashinokuwazawa</p>
+              <p class="font_en">@2022 okashinowagashido</p>
             </div>
           </div>
         </div>
@@ -415,9 +471,31 @@
         $(this).removeClass('line_off');
         $(this).addClass('line_on');
       });
-      $('.line_link').on('animationend', function(){
+      $('.line_link').on('mouseleave', function(){
         $(this).removeClass('line_on');
         $(this).addClass('line_off');
+      });
+
+      const privacy_policy_checkbox = document.querySelector('#mfp_element_6');
+      const privacy_policy_error = document.querySelector('#errormsg_privacy_policy');
+
+      privacy_policy_checkbox.addEventListener('change', () => {
+        if (!privacy_policy_checkbox.checked) {
+          privacy_policy_error.style.display = 'block';
+        } else {
+          privacy_policy_error.style.display = 'none';
+        }
+      });
+
+      const content_conf_checkbox = document.querySelector('#mfp_element_8');
+      const content_conf_error = document.querySelector('#errormsg_content_conf');
+
+      content_conf_checkbox.addEventListener('change', () => {
+        if (!content_conf_checkbox.checked) {
+          content_conf_error.style.display = 'block';
+        } else {
+          content_conf_error.style.display = 'none';
+        }
       });
     </script>
   </body>
